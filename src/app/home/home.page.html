@@ -1,12 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-grid fixed [ngClass]="!isChecked ? 'on' : 'off'">
+  <ion-row class="status" align-items-center>
+    <ion-col>
+      <div>
+        <ion-text>
+          <h1>{{ isChecked ? "ON" : "OFF" }}</h1>
+        </ion-text>
+      </div>
+    </ion-col>
+  </ion-row>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-</ion-content>
+  <ion-row align-items-end justify-content-center>
+    <div>
+      <ion-col>
+        <ion-toggle [(ngModel)]="isChecked"></ion-toggle>
+      </ion-col>
+    </div>
+  </ion-row>
+</ion-grid>
