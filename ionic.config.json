@@ -1,6 +1,8 @@
 {
   "name": "appiko-OnOff",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "4b56af55"
 }
