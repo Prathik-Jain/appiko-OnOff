@@ -1,5 +1,6 @@
 {
   "name": "appiko-OnOff",
   "integrations": {},
-  "type": "angular"
+  "type": "angular",
+  "id": "4b56af55"
 }
